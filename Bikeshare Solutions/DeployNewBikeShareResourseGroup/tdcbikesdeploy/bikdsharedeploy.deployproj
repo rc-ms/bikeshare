@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>a81526c3-bf46-47a4-b39d-4bfe2cc6f8c3</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PrepareForBuildDependsOn>
+    </PrepareForBuildDependsOn>
+  </PropertyGroup>
+  <Import Condition=" Exists('Deployment.targets') " Project="Deployment.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- vertag<:>start tokens<:>maj.min -->
+  <Import Condition=" Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets') " Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets" />
+  <!-- vertag<:>end -->
+  <ItemGroup>
+    <None Include="bin\Debug\staging\tdcbikesdeploy\WebSite.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bin\Debug\staging\tdcbikesdeploy\WebSite.parameters.json" />
+    <None Include="database\bikesharedb.bacpac" />
+    <None Include="database\bikesharedb.sql" />
+    <None Include="database\deploysqlsvr.ps1" />
+    <None Include="database\parameters.json" />
+    <None Include="database\provider-sp\SP-BulkInsertFromBlob.sql" />
+    <None Include="database\provider-sp\SP-LogAuditToSqlTimer.sql" />
+    <None Include="database\provider-sp\SP-MoveLatLongEvents.sql" />
+    <None Include="database\provider-sp\SP-QueueToSql.sql" />
+    <None Include="database\provider-sp\SP-UpdateBulkInsertRights.sql" />
+    <None Include="database\provider-sp\sp_alterdiagram.sql" />
+    <None Include="database\provider-sp\sp_creatediagram.sql" />
+    <None Include="database\provider-sp\sp_dropdiagram.sql" />
+    <None Include="database\provider-sp\sp_helpdiagramdefinition.sql" />
+    <None Include="database\provider-sp\sp_helpdiagrams.sql" />
+    <None Include="database\provider-sp\sp_renamediagram.sql" />
+    <None Include="database\provider-sp\sp_upgraddiagrams.sql" />
+    <None Include="database\template.json" />
+    <None Include="deployment artifacts\appInsight.json" />
+    <None Include="deployment artifacts\appInsightparameters.json" />
+    <None Include="deployment artifacts\parameters.json" />
+    <None Include="deployment artifacts\template.json" />
+    <None Include="deployment artifacts\WebSite.json" />
+    <None Include="deployment artifacts\WebSite.parameters.json" />
+    <None Include="Deployment.targets">
+      <Visible>False</Visible>
+    </None>
+    <Content Include="Deploy-AzureResourceGroup.ps1" />
+    <None Include="tdcbikesfunctions.PublishSettings" />
+    <None Include="WebSite.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="WebSite.parameters.json" />
+  </ItemGroup>
+  <Target Name="GetReferenceAssemblyPaths" />
+</Project>

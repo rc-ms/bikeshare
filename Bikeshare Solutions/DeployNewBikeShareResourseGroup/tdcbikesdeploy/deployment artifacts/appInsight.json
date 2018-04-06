@@ -1,0 +1,329 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_tdcbikes02functions_name": {
+            "defaultValue": "tdcbikes02functions",
+            "type": "String"
+        },
+        "serverfarms_tdcbikes02_plan_name": {
+            "defaultValue": "tdcbikes02-plan",
+            "type": "String"
+        },
+        "storageAccounts_tdcbikes02data_name": {
+            "defaultValue": "tdcbikes02data",
+            "type": "String"
+        },
+        "storageAccounts_tdcbikes02store_name": {
+            "defaultValue": "tdcbikes02store",
+            "type": "String"
+        },
+        "config_web_name": {
+            "defaultValue": "web",
+            "type": "String"
+        },
+        "components_tdcbikes01_appinsights_name": {
+            "defaultValue": "tdcbikes01-appinsights",
+            "type": "String"
+        },
+        "hostNameBindings_tdcbikes02functions.azurewebsites.net_name": {
+            "defaultValue": "tdcbikes02functions.azurewebsites.net",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "comments": "Generalized from resource: '/subscriptions/c7edd8e4-578e-416b-822f-c615932292a1/resourceGroups/Test-bikeshare/providers/microsoft.insights/components/tdcbikes01-appinsights'.",
+            "type": "microsoft.insights/components",
+            "kind": "other",
+            "name": "[parameters('components_tdcbikes01_appinsights_name')]",
+            "apiVersion": "2014-04-01",
+            "location": "southcentralus",
+            "tags": {},
+            "scale": null,
+            "properties": {
+                "ApplicationId": "[parameters('components_tdcbikes01_appinsights_name')]"
+            },
+            "dependsOn": []
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/c7edd8e4-578e-416b-822f-c615932292a1/resourceGroups/test-bikeshare/providers/Microsoft.Storage/storageAccounts/tdcbikes02data'.",
+            "type": "Microsoft.Storage/storageAccounts",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "Storage",
+            "name": "[parameters('storageAccounts_tdcbikes02data_name')]",
+            "apiVersion": "2017-10-01",
+            "location": "westus",
+            "tags": {},
+            "scale": null,
+            "properties": {
+                "networkAcls": {
+                    "bypass": "AzureServices",
+                    "virtualNetworkRules": [],
+                    "ipRules": [],
+                    "defaultAction": "Allow"
+                },
+                "supportsHttpsTrafficOnly": true,
+                "encryption": {
+                    "services": {
+                        "file": {
+                            "enabled": true
+                        },
+                        "blob": {
+                            "enabled": true
+                        }
+                    },
+                    "keySource": "Microsoft.Storage"
+                }
+            },
+            "dependsOn": []
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/c7edd8e4-578e-416b-822f-c615932292a1/resourceGroups/test-bikeshare/providers/Microsoft.Storage/storageAccounts/tdcbikes02store'.",
+            "type": "Microsoft.Storage/storageAccounts",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "Storage",
+            "name": "[parameters('storageAccounts_tdcbikes02store_name')]",
+            "apiVersion": "2017-10-01",
+            "location": "westus",
+            "tags": {},
+            "scale": null,
+            "properties": {
+                "networkAcls": {
+                    "bypass": "AzureServices",
+                    "virtualNetworkRules": [],
+                    "ipRules": [],
+                    "defaultAction": "Allow"
+                },
+                "supportsHttpsTrafficOnly": false,
+                "encryption": {
+                    "services": {
+                        "file": {
+                            "enabled": true
+                        },
+                        "blob": {
+                            "enabled": true
+                        }
+                    },
+                    "keySource": "Microsoft.Storage"
+                }
+            },
+            "dependsOn": []
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/c7edd8e4-578e-416b-822f-c615932292a1/resourceGroups/Test-bikeshare/providers/Microsoft.Web/serverfarms/tdcbikes02-plan'.",
+            "type": "Microsoft.Web/serverfarms",
+            "sku": {
+                "name": "Y1",
+                "tier": "Dynamic",
+                "size": "Y1",
+                "family": "Y",
+                "capacity": 0
+            },
+            "kind": "functionapp",
+            "name": "[parameters('serverfarms_tdcbikes02_plan_name')]",
+            "apiVersion": "2016-09-01",
+            "location": "West US",
+            "scale": null,
+            "properties": {
+                "name": "[parameters('serverfarms_tdcbikes02_plan_name')]",
+                "workerTierName": null,
+                "adminSiteName": null,
+                "hostingEnvironmentProfile": null,
+                "perSiteScaling": false,
+                "reserved": false,
+                "targetWorkerCount": 0,
+                "targetWorkerSizeId": 0
+            },
+            "dependsOn": []
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/c7edd8e4-578e-416b-822f-c615932292a1/resourceGroups/Test-bikeshare/providers/Microsoft.Web/sites/tdcbikes02functions'.",
+            "type": "Microsoft.Web/sites",
+            "kind": "functionapp",
+            "name": "[parameters('sites_tdcbikes02functions_name')]",
+            "apiVersion": "2016-08-01",
+            "location": "West US",
+            "scale": null,
+            "properties": {
+                "enabled": true,
+                "hostNameSslStates": [
+                    {
+                        "name": "[concat(parameters('sites_tdcbikes02functions_name'),'.azurewebsites.net')]",
+                        "sslState": "Disabled",
+                        "virtualIP": null,
+                        "thumbprint": null,
+                        "toUpdate": null,
+                        "hostType": "Standard"
+                    },
+                    {
+                        "name": "[concat(parameters('sites_tdcbikes02functions_name'),'.scm.azurewebsites.net')]",
+                        "sslState": "Disabled",
+                        "virtualIP": null,
+                        "thumbprint": null,
+                        "toUpdate": null,
+                        "hostType": "Repository"
+                    }
+                ],
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_tdcbikes02_plan_name'))]",
+                "reserved": false,
+                "siteConfig": null,
+                "scmSiteAlsoStopped": false,
+                "hostingEnvironmentProfile": null,
+                "clientAffinityEnabled": false,
+                "clientCertEnabled": false,
+                "hostNamesDisabled": false,
+                "containerSize": 1536,
+                "dailyMemoryTimeQuota": 0,
+                "cloningInfo": null
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_tdcbikes02_plan_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/c7edd8e4-578e-416b-822f-c615932292a1/resourceGroups/Test-bikeshare/providers/Microsoft.Web/sites/tdcbikes02functions/config/web'.",
+            "type": "Microsoft.Web/sites/config",
+            "name": "[concat(parameters('sites_tdcbikes02functions_name'), '/', parameters('config_web_name'))]",
+            "apiVersion": "2016-08-01",
+            "location": "West US",
+            "scale": null,
+            "properties": {
+                "numberOfWorkers": 1,
+                "defaultDocuments": [
+                    "Default.htm",
+                    "Default.html",
+                    "Default.asp",
+                    "index.htm",
+                    "index.html",
+                    "iisstart.htm",
+                    "default.aspx",
+                    "index.php"
+                ],
+                "netFrameworkVersion": "v4.0",
+                "phpVersion": "5.6",
+                "pythonVersion": "",
+                "nodeVersion": "",
+                "linuxFxVersion": "",
+                "requestTracingEnabled": false,
+                "remoteDebuggingEnabled": false,
+                "remoteDebuggingVersion": "VS2012",
+                "httpLoggingEnabled": false,
+                "logsDirectorySizeLimit": 35,
+                "detailedErrorLoggingEnabled": false,
+                "publishingUsername": "$tdcbikes02functions",
+                "publishingPassword": null,
+                "appSettings": null,
+                "metadata": null,
+                "connectionStrings": null,
+                "machineKey": null,
+                "handlerMappings": null,
+                "documentRoot": null,
+                "scmType": "None",
+                "use32BitWorkerProcess": true,
+                "webSocketsEnabled": false,
+                "alwaysOn": false,
+                "javaVersion": null,
+                "javaContainer": null,
+                "javaContainerVersion": null,
+                "appCommandLine": "",
+                "managedPipelineMode": "Integrated",
+                "virtualApplications": [
+                    {
+                        "virtualPath": "/",
+                        "physicalPath": "site\\wwwroot",
+                        "preloadEnabled": false,
+                        "virtualDirectories": null
+                    }
+                ],
+                "winAuthAdminState": 0,
+                "winAuthTenantState": 0,
+                "customAppPoolIdentityAdminState": false,
+                "customAppPoolIdentityTenantState": false,
+                "runtimeADUser": null,
+                "runtimeADUserPassword": null,
+                "loadBalancing": "LeastRequests",
+                "routingRules": [],
+                "experiments": {
+                    "rampUpRules": []
+                },
+                "limits": null,
+                "autoHealEnabled": false,
+                "autoHealRules": null,
+                "tracingOptions": null,
+                "vnetName": "",
+                "siteAuthEnabled": false,
+                "siteAuthSettings": {
+                    "enabled": null,
+                    "unauthenticatedClientAction": null,
+                    "tokenStoreEnabled": null,
+                    "allowedExternalRedirectUrls": null,
+                    "defaultProvider": null,
+                    "clientId": null,
+                    "clientSecret": null,
+                    "issuer": null,
+                    "allowedAudiences": null,
+                    "additionalLoginParams": null,
+                    "isAadAutoProvisioned": false,
+                    "googleClientId": null,
+                    "googleClientSecret": null,
+                    "googleOAuthScopes": null,
+                    "facebookAppId": null,
+                    "facebookAppSecret": null,
+                    "facebookOAuthScopes": null,
+                    "twitterConsumerKey": null,
+                    "twitterConsumerSecret": null,
+                    "microsoftAccountClientId": null,
+                    "microsoftAccountClientSecret": null,
+                    "microsoftAccountOAuthScopes": null
+                },
+                "cors": {
+                    "allowedOrigins": [
+                        "https://functions.azure.com",
+                        "https://functions-staging.azure.com",
+                        "https://functions-next.azure.com",
+                        "https://portal.azure.com",
+                        "https://web1.appsvcux.ext.azure.com",
+                        "https://ms.portal.azure.com"
+                    ]
+                },
+                "push": null,
+                "apiDefinition": {
+                    "url": "[concat('https://tdcbikes02functions.azure', parameters('config_web_name'),'sites.net/admin/host/swagger?code=Ljo4EBYPImlxaDBTKZtDlA3bUMjYcpiPgQmilf/RCc2D9RcaKgW1Lg==')]"
+                },
+                "autoSwapSlotName": null,
+                "localMySqlEnabled": false,
+                "managedServiceIdentityId": null,
+                "ipSecurityRestrictions": null,
+                "http20Enabled": true,
+                "minTlsVersion": "1.0"
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Web/sites', parameters('sites_tdcbikes02functions_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/c7edd8e4-578e-416b-822f-c615932292a1/resourceGroups/Test-bikeshare/providers/Microsoft.Web/sites/tdcbikes02functions/hostNameBindings/tdcbikes02functions.azurewebsites.net'.",
+            "type": "Microsoft.Web/sites/hostNameBindings",
+            "name": "[concat(parameters('sites_tdcbikes02functions_name'), '/', parameters('hostNameBindings_tdcbikes02functions.azurewebsites.net_name'))]",
+            "apiVersion": "2016-08-01",
+            "location": "West US",
+            "scale": null,
+            "properties": {
+                "siteName": "tdcbikes02functions",
+                "domainId": null,
+                "hostNameType": "Verified"
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Web/sites', parameters('sites_tdcbikes02functions_name'))]"
+            ]
+        }
+    ]
+}

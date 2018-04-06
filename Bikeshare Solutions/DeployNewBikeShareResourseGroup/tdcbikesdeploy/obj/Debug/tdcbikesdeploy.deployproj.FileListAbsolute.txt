@@ -1,0 +1,3 @@
+C:\src\tdcbikes\tdcbikeshare\Bikeshare Solutions\DeployNewBikeShareResourseGroup\tdcbikesdeploy\obj\Debug\tdcbikesdeploy.deployproj.CoreCompileInputs.cache
+C:\src\tdcbikes\tdcbikeshare\Bikeshare Solutions\DeployNewBikeShareResourseGroup\tdcbikesdeploy\bin\Debug\bin\Debug\staging\tdcbikesdeploy\WebSite.json
+C:\src\tdcbikes\tdcbikeshare\Bikeshare Solutions\DeployNewBikeShareResourseGroup\tdcbikesdeploy\bin\Debug\WebSite.json

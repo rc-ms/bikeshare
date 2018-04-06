@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "service_uwtdc_name": {
+      "value": "utwc-web"
+    },
+    "sites_tdcbikesfunctions_name": {
+      "value": "tdcbikesfunctions"
+    },
+    "hostNameBindings_tdcbikesfunctions.azurewebsites.net_name": {
+      "value": "tdcbikesfunctions.azurewebsites.net"
+    },
+    "serverfarms_tdcbikes_plan_name": {
+      "value": "tdcbikesplan"
+    },
+    "storageAccounts_tdcbikesdata_name": {
+      "value": "tdcbikesdata"
+    },
+    "storageAccounts_tdcbikesstore_name": { 
+      "value": "tdcbikesstore"
+    },
+    "components_tdcbikes_appinsights_name": {
+      "value": "tdcbikesappinsights"
+    },
+    "config_web_name": {
+      "value": "web"
+    }
+  }
+}

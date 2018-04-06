@@ -1,0 +1,23 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "WEBSITE_SLOT_NAME": "Production",
+    "FUNCTIONS_EXTENSION_VERSION": "~1",
+    "Queue-ConnectionString": "DefaultEndpointsProtocol=https;AccountName=tdcbikes01data;AccountKey=USrOl/J6wGMzMlOoXn0U4qL9hPXvHvnmnrWY5Fy18jJPQcTQnbCPMkG95lHEJ0CTzbYdS9TgqEHo0Ln57QG9uQ==;EndpointSuffix=core.windows.net",
+    "ScmType": "None",
+    "AzureWebJobsSecretStorageType": "Blob",
+    "WEBSITE_AUTH_ENABLED": "False",
+    "tdcbikes01queue_ContributePolicy_SERVICEBUS": "Endpoint=sb://tdcbikes01queue.servicebus.windows.net/;SharedAccessKeyName=ContributePolicy;SharedAccessKey=kvc+BZrUS1T6Y/jdmZufxKY0o4tXK1oG/nhy/awkzPA=",
+    "REMOTEDEBUGGINGVERSION": "15.0.26326.0",
+    "FUNCTION_APP_EDIT_MODE": "readwrite",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "fcac1cdd-1a80-4e1f-9b83-6aa2c43f77f7",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=tdcbikes01store;AccountKey=haTvB211n5w6CGM1x6iZgtIaX8wVbbD+/JjpgxU3yZsDR2PIX9bcPCwSAIuK8Ha8BEqWgidYNV6dO+4q8Mx3jA==",
+    "WEBSITE_NODE_DEFAULT_VERSION": "6.5.0",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=tdcbikes01store;AccountKey=haTvB211n5w6CGM1x6iZgtIaX8wVbbD+/JjpgxU3yZsDR2PIX9bcPCwSAIuK8Ha8BEqWgidYNV6dO+4q8Mx3jA==",
+    "WEBSITE_CONTENTSHARE": "tdcbikes01functions",
+    "WEBSITE_AUTH_AUTO_AAD": "False",
+    "WEBSITE_SITE_NAME": "tdcbikes01functions",
+    "WEBSITE_AUTH_LOGOUT_PATH": "/.auth/logout",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=tdcbikes01store;AccountKey=haTvB211n5w6CGM1x6iZgtIaX8wVbbD+/JjpgxU3yZsDR2PIX9bcPCwSAIuK8Ha8BEqWgidYNV6dO+4q8Mx3jA=="
+  }
+}

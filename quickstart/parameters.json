@@ -1,0 +1,480 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "service_uwtdc_name": {
+            "value": "uwtdc-bikes00"
+        },
+        "servers_tdcbikes00_sqlsvr_name": {
+            "value": "tdcbikes00-sqlsvr"
+        },
+        "sites_tdcbikes00functions_name": {
+            "value": "tdcbikes00functions"
+        },
+        "serverfarms_tdcbikes00_plan_name": {
+            "value": "tdcbikes00-plan"
+        },
+        "users_1_name": {
+            "value": "1"
+        },
+        "alertrules_LogAuditSucceess_name": {
+            "value": "LogAuditSucceess"
+        },
+        "storageAccounts_tdcbikes00data_name": {
+            "value": "tdcbikes00data"
+        },
+        "alertrules_httpToBlob2_Success_name": {
+            "value": "httpToBlob2 Success"
+        },
+        "storageAccounts_tdcbikes00store_name": {
+            "value": "tdcbikes00store"
+        },
+        "config_web_name": {
+            "value": "web"
+        },
+        "apis_echo_api_name": {
+            "value": "echo-api"
+        },
+        "groups_guests_name": {
+            "value": "guests"
+        },
+        "components_tdcbikes00_appinsights_name": {
+            "value": "tdcbikes00-appinsights"
+        },
+        "policies_policy_name": {
+            "value": "policy"
+        },
+        "alertrules_blobCsvToSqlBulk_Success_name": {
+            "value": "blobCsvToSqlBulk Success"
+        },
+        "alertrules_blobCsvToSqlBulk_Failure_name": {
+            "value": "blobCsvToSqlBulk Failure"
+        },
+        "products_starter_name": {
+            "value": "starter"
+        },
+        "groups_developers_name": {
+            "value": "developers"
+        },
+        "notifications_BCC_name": {
+            "value": "BCC"
+        },
+        "products_unlimited_name": {
+            "value": "unlimited"
+        },
+        "groups_administrators_name": {
+            "value": "administrators"
+        },
+        "keys_ServiceManaged_name": {
+            "value": "ServiceManaged"
+        },
+        "databases_bikesharedb_name": {
+            "value": "bikesharedb"
+        },
+        "databases_bikesharedb1_name": {
+            "value": "bikesharedb1"
+        },
+        "firewallRules_Herberth_name": {
+            "value": "Herberth"
+        },
+        "users_1_name_1": {
+            "value": "1"
+        },
+        "auditingPolicies_Default_name": {
+            "value": "Default"
+        },
+        "apis_596f849a279bd1f6f7761e47_name": {
+            "value": "596f849a279bd1f6f7761e47"
+        },
+        "users_1_name_2": {
+            "value": "1"
+        },
+        "encryptionProtector_current_name": {
+            "value": "current"
+        },
+        "users_5989d67b5265b61150cf4c5a_name": {
+            "value": "5989d67b5265b61150cf4c5a"
+        },
+        "users_595e5af85265b60be85b9768_name": {
+            "value": "595e5af85265b60be85b9768"
+        },
+        "users_598bd81b5265b6145c9ac6b3_name": {
+            "value": "598bd81b5265b6145c9ac6b3"
+        },
+        "users_5a316e4d5265b6103c568112_name": {
+            "value": "5a316e4d5265b6103c568112"
+        },
+        "users_596681805265b6123042d64d_name": {
+            "value": "596681805265b6123042d64d"
+        },
+        "users_5a2833e85265b60fcc323b67_name": {
+            "value": "5a2833e85265b60fcc323b67"
+        },
+        "users_5a316e735265b6103c56811a_name": {
+            "value": "5a316e735265b6103c56811a"
+        },
+        "users_5a6632065265b60b5875bc28_name": {
+            "value": "5a6632065265b60b5875bc28"
+        },
+        "users_5a3464ba5265b6049070a6fc_name": {
+            "value": "5a3464ba5265b6049070a6fc"
+        },
+        "users_595e533b5265b60be85b9767_name": {
+            "value": "595e533b5265b60be85b9767"
+        },
+        "users_595e5f255265b60be85b9769_name": {
+            "value": "595e5f255265b60be85b9769"
+        },
+        "users_5976b51b5265b60cc42dda4a_name": {
+            "value": "5976b51b5265b60cc42dda4a"
+        },
+        "users_5976b8a75265b60cc42dda4e_name": {
+            "value": "5976b8a75265b60cc42dda4e"
+        },
+        "users_5983d0185265b60e381e075b_name": {
+            "value": "5983d0185265b60e381e075b"
+        },
+        "users_5989d6a95265b61150cf4c5d_name": {
+            "value": "5989d6a95265b61150cf4c5d"
+        },
+        "apis_echo_api_name_1": {
+            "value": "echo-api"
+        },
+        "groups_guests_name_1": {
+            "value": "guests"
+        },
+        "groups_5976b4aa5265b60cc42dda49_name": {
+            "value": "5976b4aa5265b60cc42dda49"
+        },
+        "templates_AccountClosedDeveloper_name": {
+            "value": "AccountClosedDeveloper"
+        },
+        "policies_policy_name_1": {
+            "value": "policy"
+        },
+        "apis_echo_api_name_2": {
+            "value": "echo-api"
+        },
+        "groups_guests_name_2": {
+            "value": "guests"
+        },
+        "products_595ebf445265b60be85b976b_name": {
+            "value": "595ebf445265b60be85b976b"
+        },
+        "alertrules_Failure_Anomalies___tdcbikes00_appinsights_name": {
+            "value": "Failure Anomalies - tdcbikes00-appinsights"
+        },
+        "groups_developers_name_1": {
+            "value": "developers"
+        },
+        "notifications_AccountClosedPublisher_name": {
+            "value": "AccountClosedPublisher"
+        },
+        "templates_EmailChangeIdentityDefault_name": {
+            "value": "EmailChangeIdentityDefault"
+        },
+        "groups_developers_name_2": {
+            "value": "developers"
+        },
+        "templates_NewIssueNotificationMessage_name": {
+            "value": "NewIssueNotificationMessage"
+        },
+        "subscriptions_595d78c6b110210088070001_name": {
+            "value": "595d78c6b110210088070001"
+        },
+        "subscriptions_595d78c6b110210088070002_name": {
+            "value": "595d78c6b110210088070002"
+        },
+        "subscriptions_595e5f4d5265b60be85b976a_name": {
+            "value": "595e5f4d5265b60be85b976a"
+        },
+        "subscriptions_595ebf455265b60e5cab37ce_name": {
+            "value": "595ebf455265b60e5cab37ce"
+        },
+        "subscriptions_5976b5c25265b60cc42dda4c_name": {
+            "value": "5976b5c25265b60cc42dda4c"
+        },
+        "subscriptions_5976b6405265b60cc42dda4d_name": {
+            "value": "5976b6405265b60cc42dda4d"
+        },
+        "subscriptions_5976b8ba5265b60cc42dda4f_name": {
+            "value": "5976b8ba5265b60cc42dda4f"
+        },
+        "subscriptions_5976b9665265b60cc42dda50_name": {
+            "value": "5976b9665265b60cc42dda50"
+        },
+        "subscriptions_5976b97e5265b60cc42dda51_name": {
+            "value": "5976b97e5265b60cc42dda51"
+        },
+        "subscriptions_5976b9925265b60cc42dda52_name": {
+            "value": "5976b9925265b60cc42dda52"
+        },
+        "subscriptions_5983d0285265b60e381e075c_name": {
+            "value": "5983d0285265b60e381e075c"
+        },
+        "subscriptions_5985ea5d5265b60fb4891fd0_name": {
+            "value": "5985ea5d5265b60fb4891fd0"
+        },
+        "subscriptions_5985ea735265b60fb4891fd1_name": {
+            "value": "5985ea735265b60fb4891fd1"
+        },
+        "subscriptions_5989d6a55265b61150cf4c5c_name": {
+            "value": "5989d6a55265b61150cf4c5c"
+        },
+        "subscriptions_5989d7275265b61150cf4c5e_name": {
+            "value": "5989d7275265b61150cf4c5e"
+        },
+        "subscriptions_598cf024c743fa944ff7ee2c_name": {
+            "value": "598cf024c743fa944ff7ee2c"
+        },
+        "subscriptions_5a2834065265b60fcc323b68_name": {
+            "value": "5a2834065265b60fcc323b68"
+        },
+        "subscriptions_5a3464d05265b6127c48691d_name": {
+            "value": "5a3464d05265b6127c48691d"
+        },
+        "subscriptions_5a4e9bf55265b60754302c93_name": {
+            "value": "5a4e9bf55265b60754302c93"
+        },
+        "templates_ConfirmSignUpIdentityDefault_name": {
+            "value": "ConfirmSignUpIdentityDefault"
+        },
+        "templates_PasswordResetIdentityDefault_name": {
+            "value": "PasswordResetIdentityDefault"
+        },
+        "groups_administrators_name_1": {
+            "value": "administrators"
+        },
+        "templates_InviteUserNotificationMessage_name": {
+            "value": "InviteUserNotificationMessage"
+        },
+        "templates_NewCommentNotificationMessage_name": {
+            "value": "NewCommentNotificationMessage"
+        },
+        "firewallRules_AllowAllWindowsAzureIps_name": {
+            "value": "AllowAllWindowsAzureIps"
+        },
+        "operations_create_resource_name": {
+            "value": "create-resource"
+        },
+        "operations_modify_resource_name": {
+            "value": "modify-resource"
+        },
+        "operations_remove_resource_name": {
+            "value": "remove-resource"
+        },
+        "groups_administrators_name_2": {
+            "value": "administrators"
+        },
+        "templates_NewDeveloperNotificationMessage_name": {
+            "value": "NewDeveloperNotificationMessage"
+        },
+        "operations_retrieve_resource_name": {
+            "value": "retrieve-resource"
+        },
+        "advisors_DropIndex_name": {
+            "value": "DropIndex"
+        },
+        "advisors_DropIndex_name_1": {
+            "value": "DropIndex"
+        },
+        "templates_RejectDeveloperNotificationMessage_name": {
+            "value": "RejectDeveloperNotificationMessage"
+        },
+        "advisors_CreateIndex_name": {
+            "value": "CreateIndex"
+        },
+        "templates_RequestDeveloperNotificationMessage_name": {
+            "value": "RequestDeveloperNotificationMessage"
+        },
+        "operations_retrieve_header_only_name": {
+            "value": "retrieve-header-only"
+        },
+        "policies_policy_name_2": {
+            "value": "policy"
+        },
+        "advisors_CreateIndex_name_1": {
+            "value": "CreateIndex"
+        },
+        "templates_PurchaseDeveloperNotificationMessage_name": {
+            "value": "PurchaseDeveloperNotificationMessage"
+        },
+        "apis_596f849a279bd1f6f7761e47_name_1": {
+            "value": "596f849a279bd1f6f7761e47"
+        },
+        "notifications_NewApplicationNotificationMessage_name": {
+            "value": "NewApplicationNotificationMessage"
+        },
+        "backupLongTermRetentionVaults_RegisteredVault_name": {
+            "value": "RegisteredVault"
+        },
+        "templates_ApplicationApprovedNotificationMessage_name": {
+            "value": "ApplicationApprovedNotificationMessage"
+        },
+        "users_5989d67b5265b61150cf4c5a_name_1": {
+            "value": "5989d67b5265b61150cf4c5a"
+        },
+        "users_595e5af85265b60be85b9768_name_1": {
+            "value": "595e5af85265b60be85b9768"
+        },
+        "users_598bd81b5265b6145c9ac6b3_name_1": {
+            "value": "598bd81b5265b6145c9ac6b3"
+        },
+        "users_5a316e4d5265b6103c568112_name_1": {
+            "value": "5a316e4d5265b6103c568112"
+        },
+        "users_596681805265b6123042d64d_name_1": {
+            "value": "596681805265b6123042d64d"
+        },
+        "users_5a2833e85265b60fcc323b67_name_1": {
+            "value": "5a2833e85265b60fcc323b67"
+        },
+        "users_5a316e735265b6103c56811a_name_1": {
+            "value": "5a316e735265b6103c56811a"
+        },
+        "users_5a6632065265b60b5875bc28_name_1": {
+            "value": "5a6632065265b60b5875bc28"
+        },
+        "users_5a3464ba5265b6049070a6fc_name_1": {
+            "value": "5a3464ba5265b6049070a6fc"
+        },
+        "users_595e533b5265b60be85b9767_name_1": {
+            "value": "595e533b5265b60be85b9767"
+        },
+        "users_595e5f255265b60be85b9769_name_1": {
+            "value": "595e5f255265b60be85b9769"
+        },
+        "users_5976b51b5265b60cc42dda4a_name_1": {
+            "value": "5976b51b5265b60cc42dda4a"
+        },
+        "users_5976b8a75265b60cc42dda4e_name_1": {
+            "value": "5976b8a75265b60cc42dda4e"
+        },
+        "users_5983d0185265b60e381e075b_name_1": {
+            "value": "5983d0185265b60e381e075b"
+        },
+        "users_5989d6a95265b61150cf4c5d_name_1": {
+            "value": "5989d6a95265b61150cf4c5d"
+        },
+        "apis_596f849a279bd1f6f7761e47_name_2": {
+            "value": "596f849a279bd1f6f7761e47"
+        },
+        "auditingPolicies_Default_name_1": {
+            "value": "Default"
+        },
+        "notifications_RequestPublisherNotificationMessage_name": {
+            "value": "RequestPublisherNotificationMessage"
+        },
+        "templates_PasswordResetByAdminNotificationMessage_name": {
+            "value": "PasswordResetByAdminNotificationMessage"
+        },
+        "operations_retrieve_resource_cached_name": {
+            "value": "retrieve-resource-cached"
+        },
+        "geoBackupPolicies_Default_name": {
+            "value": "Default"
+        },
+        "auditingPolicies_Default_name_2": {
+            "value": "Default"
+        },
+        "notifications_PurchasePublisherNotificationMessage_name": {
+            "value": "PurchasePublisherNotificationMessage"
+        },
+        "notifications_NewIssuePublisherNotificationMessage_name": {
+            "value": "NewIssuePublisherNotificationMessage"
+        },
+        "advisors_ForceLastGoodPlan_name": {
+            "value": "ForceLastGoodPlan"
+        },
+        "geoBackupPolicies_Default_name_1": {
+            "value": "Default"
+        },
+        "groups_developers_name_3": {
+            "value": "developers"
+        },
+        "advisors_DbParameterization_name": {
+            "value": "DbParameterization"
+        },
+        "advisors_ForceLastGoodPlan_name_1": {
+            "value": "ForceLastGoodPlan"
+        },
+        "advisors_DbParameterization_name_1": {
+            "value": "DbParameterization"
+        },
+        "groups_administrators_name_3": {
+            "value": "administrators"
+        },
+        "policies_policy_name_3": {
+            "value": "policy"
+        },
+        "hostNameBindings_tdcbikes00functions.azurewebsites.net_name": {
+            "value": "tdcbikes00functions.azurewebsites.net"
+        },
+        "transparentDataEncryption_current_name": {
+            "value": "current"
+        },
+        "transparentDataEncryption_current_name_1": {
+            "value": "current"
+        },
+        "templates_QuotaLimitApproachingDeveloperNotificationMessage_name": {
+            "value": "QuotaLimitApproachingDeveloperNotificationMessage"
+        },
+        "policies_policy_name_4": {
+            "value": "policy"
+        },
+        "schemas_597127765265b6096096dab1_name": {
+            "value": "597127765265b6096096dab1"
+        },
+        "users_595e5af85265b60be85b9768_name_2": {
+            "value": "595e5af85265b60be85b9768"
+        },
+        "users_595e533b5265b60be85b9767_name_2": {
+            "value": "595e533b5265b60be85b9767"
+        },
+        "users_595e5f255265b60be85b9769_name_2": {
+            "value": "595e5f255265b60be85b9769"
+        },
+        "users_5976b51b5265b60cc42dda4a_name_2": {
+            "value": "5976b51b5265b60cc42dda4a"
+        },
+        "users_5983d0185265b60e381e075b_name_2": {
+            "value": "5983d0185265b60e381e075b"
+        },
+        "notifications_QuotaLimitApproachingPublisherNotificationMessage_name": {
+            "value": "QuotaLimitApproachingPublisherNotificationMessage"
+        },
+        "apis_596f849a279bd1f6f7761e47_name_3": {
+            "value": "596f849a279bd1f6f7761e47"
+        },
+        "backupLongTermRetentionPolicies_Default_name": {
+            "value": "Default"
+        },
+        "backupLongTermRetentionPolicies_Default_name_1": {
+            "value": "Default"
+        },
+        "policies_policy_name_5": {
+            "value": "policy"
+        },
+        "operations_596f84ec5265b60ee418d7ea_name": {
+            "value": "596f84ec5265b60ee418d7ea"
+        },
+        "operations_596f84ec5265b60ee418d7e9_name": {
+            "value": "596f84ec5265b60ee418d7e9"
+        },
+        "operations_5971114e5265b6096096daa1_name": {
+            "value": "5971114e5265b6096096daa1"
+        },
+        "groups_5976b4aa5265b60cc42dda49_name_1": {
+            "value": "5976b4aa5265b60cc42dda49"
+        },
+        "policies_policy_name_6": {
+            "value": "policy"
+        },
+        "policies_policy_name_7": {
+            "value": "policy"
+        },
+        "policies_policy_name_8": {
+            "value": "policy"
+        }
+    }
+}
